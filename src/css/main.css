@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+:root {
+    --bg-color-main: rgb(31, 31, 31);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html,
+#content {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--bg-color-main);
+}
+
+#content {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* IMAGE AUTHOR
+shaian ramesht
+@shaianramesht */
+#bg-image {
+    font-family: 'Italianno', cursive;
+    width: 600px;
+    height: 100%;
+    box-shadow: inset -90px 0px 24px -33px var(--bg-color-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#restaurant-name {
+    margin-bottom: 40%;
+}
+
+#restaurant-name h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1;
+    color: white;
+}
+
+#bg-image img {
+    position: fixed;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 100%;
+    z-index: -1;
+}
