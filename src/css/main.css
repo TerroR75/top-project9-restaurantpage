@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Roboto&display=swap');
+
 
 :root {
     --bg-color-main: rgb(31, 31, 31);
@@ -14,30 +15,32 @@
 
 body,
 html {
-    /* height: 100%;
-    width: 100%; */
+    width: 100%;
+
 }
 
 body {
+    /* min-height: 100%; */
     background-color: var(--bg-color-main);
     display: grid;
     grid-template-columns: minmax(250px, 1fr) 3fr;
-    grid-template-rows: 100vh;
 }
 
 #content {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     /* position: relative; */
     grid-column: 2/3;
     z-index: 100;
     padding-left: 30px;
+    /* height: 100%; */
 }
 
 #content .display {
     margin-top: 50px;
 }
 
-#content header {
+#content>header {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -61,11 +64,15 @@ body {
     border: none;
     cursor: pointer;
     transition: all 100ms;
-    box-sizing: border-box;
+}
+
+#content header button.btnActive {
+    border-bottom: 2px solid #FFFFFF;
+    font-weight: 600;
 }
 
 #content header button:hover {
-    border-bottom: 5px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
     font-weight: 600;
 }
 
@@ -95,4 +102,63 @@ body {
     font-weight: 300;
     line-height: 1;
     color: white;
+}
+
+
+/* DISPLAY */
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.display hr {
+    width: 60%;
+}
+
+
+/* DISPLAY HOME */
+.display #display-home {
+    background: var(--primary-content-color);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    min-width: 70%;
+    min-height: 70%;
+    border-radius: 10px;
+    padding: 15px 80px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    line-height: 0;
+}
+
+.display #display-home header {
+    font-family: 'Italianno', cursive;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.display #display-home span {
+    line-height: 1.8;
+    text-justify: left;
+}
+
+/* DISPLAY MENU */
+.display #display-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.menuPosition {
+    height: 300px;
+    /* width: 70%; */
+    background: rgb(146, 4, 4);
+    border-radius: 15px;
 }
