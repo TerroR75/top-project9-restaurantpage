@@ -2,6 +2,7 @@
 
 :root {
     --bg-color-main: rgb(31, 31, 31);
+    --primary-content-color: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -12,41 +13,81 @@
 }
 
 body,
-html,
-#content {
-    height: 100%;
-    width: 100%;
+html {
+    /* height: 100%;
+    width: 100%; */
 }
 
 body {
     background-color: var(--bg-color-main);
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 3fr;
+    grid-template-rows: 100vh;
 }
 
 #content {
     display: flex;
-    position: absolute;
-    margin-left: 580px;
+    /* position: relative; */
+    grid-column: 2/3;
+    z-index: 100;
+    padding-left: 30px;
 }
 
+#content .display {
+    margin-top: 50px;
+}
 
-/* IMAGE AUTHOR
-shaian ramesht
-@shaianramesht */
-#bg-image {
-    font-family: 'Italianno', cursive;
-    min-width: 300px;
-    max-width: 30%;
-    height: 100%;
-    box-shadow: inset -90px 0px 24px -33px var(--bg-color-main);
+#content header {
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--primary-content-color);
+    padding: 5px 20px;
+    border-radius: 0px 0px 15px 15px;
+    left: 55%;
+    top: 0;
+}
+
+#content header #navbar {
+    display: flex;
+    gap: 15px;
+}
+
+#content header button {
+    padding: 5px 15px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 100ms;
+    box-sizing: border-box;
+}
+
+#content header button:hover {
+    border-bottom: 5px solid #FFFFFF;
+    font-weight: 600;
+}
+
+
+#bg-image {
+    font-family: 'Italianno', cursive;
+    background: url('../img/shaian-ramesht-exSEmuA7R7k-unsplash.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 100vh;
+    min-width: clamp(5%, 28%, 28%);
+    box-shadow: inset -90px 0px 24px -33px var(--bg-color-main);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    grid-column: 1/2;
 }
 
 #restaurant-name {
-    position: relative;
-    right: 5%;
-    bottom: 10%;
+    /* position: relative; */
+    margin-top: 50px;
+    margin-right: 5%;
 }
 
 #restaurant-name h1 {
@@ -54,14 +95,4 @@ shaian ramesht
     font-weight: 300;
     line-height: 1;
     color: white;
-}
-
-#bg-image img {
-    position: fixed;
-    background-repeat: no-repeat;
-    min-width: 300px;
-    max-width: 30%;
-    height: 100%;
-    opacity: 0.5;
-    z-index: -1;
 }
