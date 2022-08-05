@@ -25,8 +25,7 @@ body {
 #content {
     display: flex;
     position: absolute;
-    align-items: center;
-    justify-content: center;
+    margin-left: 580px;
 }
 
 
@@ -35,7 +34,8 @@ shaian ramesht
 @shaianramesht */
 #bg-image {
     font-family: 'Italianno', cursive;
-    width: 600px;
+    min-width: 300px;
+    max-width: 30%;
     height: 100%;
     box-shadow: inset -90px 0px 24px -33px var(--bg-color-main);
     display: flex;
@@ -44,7 +44,9 @@ shaian ramesht
 }
 
 #restaurant-name {
-    margin-bottom: 40%;
+    position: relative;
+    right: 5%;
+    bottom: 10%;
 }
 
 #restaurant-name h1 {
@@ -57,7 +59,9 @@ shaian ramesht
 #bg-image img {
     position: fixed;
     background-repeat: no-repeat;
-    width: 600px;
+    min-width: 300px;
+    max-width: 30%;
     height: 100%;
+    opacity: 0.5;
     z-index: -1;
 }

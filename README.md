@@ -18,3 +18,6 @@ Live Preview: #
 ## Authors
 
 - [@TerroR75](https://github.com/TerroR75)
+
+## Credits
+- Background image - [@shaianramesht](https://unsplash.com/@shaianramesht)
