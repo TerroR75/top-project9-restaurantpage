@@ -21,5 +21,4 @@ Live Preview: #
 
 ## Credits
 - Background image - [@shaianramesht](https://unsplash.com/@shaianramesht)
-Pizza photos:
-- [@AurélienLemasson-Théobald](https://unsplash.com/@aurel__lens)
+- Pizza photos: [@AurélienLemasson-Théobald](https://unsplash.com/@aurel__lens)
