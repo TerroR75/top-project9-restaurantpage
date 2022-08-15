@@ -2,7 +2,7 @@
 
 Restaurant page with webpack functionality.
 
-Live Preview: #
+Live Preview: https://terror75.github.io/top-project9-restaurantpage/dist/
 
 ![alt text](#)
 ![alt text](#)
