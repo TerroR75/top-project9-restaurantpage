@@ -9,11 +9,11 @@ Live Preview: #
 
 ## Features
 
-- For now - nothing
+- Working tabs rendering
 
 
 ## To do
--
+- Responsivness
 
 ## Authors
 
